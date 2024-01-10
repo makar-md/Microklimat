@@ -8,12 +8,12 @@
 /* настройка размеров карусели */
 .carousel-inner {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
   }
 
   .carousel-item {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
   }  
 /* до сюда */
 
