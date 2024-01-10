@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="saman.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>S.H.A.M.A.N. 1.0</title>
+</head>
+<body class="bg-dark text-light">
+    <div class="col-11">
+        <div class="row">
+            <div class="col-2">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4  position-fixed" style="border-right:2px solid #e91e63;">
+                    <nav class="nav  flex-column">
+                        <a class="nav-link bg-dark" href="double.html" style="color:#e91e63"><h3>Микроклимат</h3></a>
+                        <a class="nav-link text-light" href="#item-1">S.H.A.M.A.N. 1.0</a>
+                        <nav class="nav  flex-column" >
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-1">Введение</a>
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-2">Урок пайки</a>
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-3">Список компонентов</a>
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-4">Ссылки на компоненты</a>
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-5">Сборка</a>
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-6">Прошивка</a>
+                            <a class="nav-link ms-3 my-1 text-light" href="#item-1-7">Предсказане осадков</a>
+
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+        
+            <div class="col-10">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                    <div id="item-1">
+                    <h1 class="text-center">S.H.A.M.A.N. 1.0</h1>
+                    </div> 
+
+                    <div class="neon"></div>
+                    
+                    <div id="item-1-1">
+                    <h5><b>Введение</b></h5>
+                    <p> S.H.A.M.A.N 1.0 - это домашняя метеостанция, которую вы можете собрать. Её стоимость около 1500 тыс рублей. Собирать ееё не так уж и сложно. 
+                        Все шаги я буду пояснять. Все этапы будут пояснятся фотоотчётом, так что вы точно не запутаетесь. Всё что вам нужно это комиьютер,
+                        паяльник, свободное время и комплект датчиков о которых я расскажу позже. Ссылки на датчики я также прикреплю. Если не умеете поять не беда. 
+                        По поводу этого я прикреплю отдельный видеоурок. Метеостанция я делал на платформе Arduino - это универсальная платформа для множества проектов
+                        Её плюс это доступность и простота использования. А самый важный плюс этой метеостанции то что она может предсказывать дождь и град,
+                        а также резко еухудшения погодных условий. А сейчас юмористический перерыв: 
+                    </p><br>
+                    <p style="color: white; font-size: 24px;">Анекдот:</p>
+                    <p>
+                        
+                        Решили чукчи на охоту пойти. Приходят к метеорологу, спрашивают:<br>
+                        - У тебя, метеоролог, умные приборы есть. Какая, однако, завтра погода<br>
+                        будет. Чукчи хотят на охоту идти.<br>
+                        Метеоролог:<br>
+                        - Здесь без "огненной" воды не обойтись.<br>
+                        Чукчи приносят ему водку. Он им наугад:<br>
+                        - Идите, мужики, на охоту. Хорошая погода будет.<br>
+                        Чукчи ушли. Метеолорога совесть заела. А вдруг, думает, пурга. <br>
+                        Люди из-за меня погибнут. Побежал к шаману. Говорит:<br>
+                        - Вот тебе, шаман, огненная вода, деньги, только скажи, какая завтра погода будет.<br>
+                        Шаман:<br>
+                        - Хорошая будет погода.<br>
+                        Метеоролог:<br>
+                        - Откуда ты знаешь? У меня вон приборы всякие, а я точно не могусказать.<br>
+                        Шаман:<br>
+                        - Вон видишь, двое чукчей на охоту пошли.<br>
+                    </p>
+                    </div>
+
+                    <div class="neon"></div>
+
+                    <div id="item-1-2">
+                    <h5><b>Видеоурок о пайке</b></h5>
+                    <p class="text-center"><video controls width="900" height="700">>
+                        <source src="Как паять паяльником, обучение.mp4" type="video/mp4">
+                      </video></p>
+                      <p>Если что вот ссылка на этот видеоурок вы можете найти на you tube.</p>   
+                    </div>
+
+                    <div class="neon"></div>
+                
+                    <div id="item-1-3">
+                        <h5><b>Список датчиков и компонентов.</b></h5>
+                        <p style="color: white; font-size: 24px;">Компоненты :</p>
+                        <p>
+                            <ul>
+                                <li>Плата arduino uno - основа нашего проекта.</li>
+                                <li>Строчный дисплей lcd1602 с шиной i2c на него будет осуществлятся вывод всей информации.</li>
+                                <li>Монтажные провода.</li>
+                                <li>Блок питания на 9V 3A.</li>
+                            </ul>
+                        </p>
+                        <p style="color: white; font-size: 24px;">Датчики :</p>
+                        <p>
+                            <ul>
+                                <li>DS1302 - датчик реального времени. Отвечает за дату и время.</li>
+                                <li>BMP-180 - барометр отвечает за определение давления м вероятности осадков.</li>
+                                <li>DHT-11 - внутренний термометр. Определяет влажность и температуру внутри помешеня. у него 
+                                    мальенький диапазон температур(0˚C - +40˚C), но он очень точный</li>
+                                <li>DHT-22 - внешний термометр. Определяет влажность и температуру вне помешеня. Имеет более 
+                                    широкий диапазон (-40˚C - +120˚C), но более большую погрешность. </li>
+                                <li>MQ-2 - датчик качества воздуха. Определяет уровееь углекислого газа в помещении.
+                                    На самом деле он может определять множество видов газов, но я настроил его только на один тип</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="neon"></div>
+
+                    <div id="item-1-4">
+                        <h5><b>Стоимость всех компонентов</h5>
+                            <p style="color: white; font-size: 24px;">Aliexpress</p>
+                            <ul>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005006141687578.html?spm=a2g2w.productlist.0.0.71404fd9sk7tfP&sku_id=12000035947933188" target="_blank">Arduino Uno</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005004640186384.html?sku_id=12000037070383560&spm=a2g2w.productlist.search_results.17.1ce44037jiOBk0" target="_blank">DHT-22</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005006085992829.html?sku_id=12000035663832773&spm=a2g2w.productlist.search_results.9.42cc24d5b7HYVt" target="_blank">LCD1602</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005003818977109.html?sku_id=12000029054253139&spm=a2g2w.productlist.search_results.1.55ac4078Y80DRl" target="_blank">DHT-11</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005005805545489.html?sku_id=12000034414728784&spm=a2g2w.productlist.search_results.8.3a8459a8UIM4SD" target="_blank">DS1302</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005005787149861.html?sku_id=12000034353131958&spm=a2g2w.productlist.search_results.19.7060232bIg01Gt" target="_blank">MQ-2</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005006250747533.html?sku_id=12000036469729223&spm=a2g2w.productlist.search_results.15.7655571aVbqPdn" target="_blank">BMP-180</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005004865780597.html?sku_id=12000030806142188&spm=a2g2w.productlist.search_results.1.5e387d53YxNm2A" target="_blank">Блок питания</a>
+                                </li>
+                                <li>
+                                    <a href="https://aliexpress.ru/item/1005006394786532.html?sku_id=12000037011208364&spm=a2g2w.productlist.search_results.1.70c15642lov5a5" target="_blank">Монтажные провода</a>
+                                </li>                            
+                            </ul>
+                            <p>
+                                Итоого: 1657 рублей с учётом доставки.
+                            </p>
+
+                            <p style="color: white; font-size: 24px;">Ozon</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/plata-razrabotki-uno-r3-improved-ch340-drayver-atmega28p-uchebnyy-komplekt-sovmestimyy-s-1325350772/?asb2=mP3lfCUJ8v3XvOiFDReP4fzeiFx_91zmkmS364M4bH0_JvyVU8sii5kz35cN0HHu&avtc=1&avte=2&avts=1704876266&keywords=arduino+uno" target="_blank">Arduino Uno</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/datchik-temperatury-i-vlazhnosti-dht22-1290378755/?asb2=RaAWjti70WsrRY8v6EZ_XDIAZ10ws3qmnM3XyBg8YJVpnH03VW-pik0S8tjv8sxi&avtc=1&avte=2&avts=1704876316&keywords=dht22" target="_blank">DHT-22</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/displey-2x16-1602-hd44780-konverter-i2c-arduin-1166136355/?asb2=DJerYDq1u2Moq7ad2rGPK6miY_SWkuks4P6YhrLkd5cnBByx9mJABtcX7skvLaFh&avtc=1&avte=2&avts=1704876402&keywords=lcd1602" target="_blank">LCD1602</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/datchik-temperatury-i-vlazhnosti-dht-11-s-platoy-dlya-arduino-arduino-dht11-941206518/?asb2=yGN3VzPwpGNPxcK2Vj4CWJDv3cgnj9mHoQGfmonpxrIBGxx2w7wWjjf-Mhhh0pxE&avtc=1&avte=2&avts=1704876504&keywords=dht+11" target="_blank">DHT-11</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/chasy-realnogo-vremeni-gsmin-ds1302-dlya-sredy-arduino-s-batareykoy-cr2032-zelenyy-985812126/?asb2=JwzRxQOkHdmh_zzTMvSEcmNN4trdeMSqWZrunrGCkg54z5Jd3O-6EM5u9q4DQVUV&avtc=1&avte=2&avts=1704876559&keywords=ds1302" target="_blank">DS1302</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/datchik-shirokogo-spektra-gazov-mq-2-arduino-arduino-924409803/?asb=rPG7SbCF4xEqUmbLMM9PxqDj%252BVs0G9tmoTe367rc0EI%253D&asb2=scCbauw1hsBCmE10y0XSjaBU6Old-F1hEUav3ZUwMcV_XSXVfvhSjmOV9gr1KOA7&avtc=1&avte=2&avts=1704876599&keywords=mq2" target="_blank">MQ-2</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/datchik-atmosfernogo-davleniya-i-temperatury-bmp180-gy-68-943303943/?asb2=JunOMQabhJMc5lf_l9202pcG9MGVqlb8bDTefX0MdqXJXRI2wW_KA5Ig-reSYNYY&avtc=1&avte=2&avts=1704876650&keywords=bmp-180" target="_blank">BMP-180</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/blok-pitaniya-universalnyy-9v-3a-shteker-5-5-2-5-mm-815637021/?asb2=S0VP6vTzxcBExJAWowGCz9g0G7HzGYYqhmSnxi5bCIFhirb6lPUrCZouyVi9bg6i&avtc=1&avte=2&avts=1704877319&keywords=%D0%B1%D0%BB%D0%BE%D0%BA+%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F+9v+3a+DC+5.5+x+2.1+%D0%BC%D0%BC" target="_blank">Блок питания</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ozon.ru/product/elektricheskiy-provod-tchernov-cable-0-35-mm-1-m-100-g-883789186/?asb2=lKhi7t_UJD1Gc_qy9RN_49FUrtE_mpYTHge3GPk6ns9OvDGRdUYBIerSjuBArspd&avtc=1&avte=2&avts=1704877510&from_sku=883789186&from_url=https%253A%252F%252Fwww.ozon.ru%252Fsearch%252F%253Ffrom_global%253Dtrue%2526sorting%253Dprice%2526text%253D%2525D0%2525BC%2525D0%2525BE%2525D0%2525BD%2525D1%252582%2525D0%2525B0%2525D0%2525B6%2525D0%2525BD%2525D1%25258B%2525D0%2525B5%252B%2525D0%2525BF%2525D1%252580%2525D0%2525BE%2525D0%2525B2%2525D0%2525BE%2525D0%2525B4%2525D0%2525B0&keywords=%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%B0&oos_search=false&tab=reviews" target="_blank">Монтажные провода</a>
+                                </li>                            
+                            </ul>
+                            <p>
+                                Итоого: 2158.
+                            </p>
+                            <p>Но если скомбинировать и заказать часть с алиэкспресс, а часть с озон то можно получить цену 1516 руб.</p>
+                    </div>
+
+                    <div class="neon"></div>
+
+                    <div id="item-1-5">
+                        <h5><b>Сборка</h5>
+                        <p>Начнём с подключеня LCD1602 для того чтобы выводить информацию. Так как дисплей с шиной I2C то надо подключить
+                            только 4 провода вместо 16. Пин VCC с дисплея нужно подключить к пину 5V на плате. Пин GND к пину GND. Пин SDA
+                            нужно подключить к пину A4. Пин SCl нужно подключить к пину A5. Для подключения дисплея я использовал библиотеки
+                            Whire.h и LiquidCrystal_I2C.h. Файл со всеми библиотеками и кодом программы будет в конце.
+                        </p>
+
+                        <div class="decoration">
+                            <div class="picture"> 
+                                <img src="pictures/подключение lcd.png" alt="подключение lcd" style="width: 80% ; height: 100%;"><br>  
+                            </div>
+                            <div class="picture"> 
+                                <img src="pictures/подключ lcd2.jpg" alt="подключение lcd" style="width: 80% ; height: 100%;"><br>     
+                            </div>   
+                        </div>
+                        <p class="text-center"><b>Подключение LCD1602</b></p><br>
+
+                        <p> Слдующим будем подключать DHT-11. Для этого я исползовал библиотеку DHt.h. К плате датчик подключается легко: + к 5V,
+                            - к GND, OUT(Иногда DATA) к любому цифровому порту кроме, 0 и 1. Цифровые порты это пины обозначеные на плате буквой D и числом. ВЕсь код будет с коментариями
+                            и если наше подключение не совпала то вы поймёте где это исправить.
+                        </p>
+
+                        <div class="decoration">
+                            <div class="picture"> 
+                                <img src="pictures/подкл DHT11.webp" alt="подключение DHT11" style="width: 80% ; height: 100%;"><br>  
+                            </div>
+                            <div class="picture"> 
+                                <img src="pictures/1.jpg" alt="подключение DHT11" style="width: 80% ; height: 100%;"><br>     
+                            </div>   
+                        </div>
+                        <p class="text-center"><b>Подключение DHT-11</b></p><br>
+                        
+
+                        <p> 
+                            Затем подключение барометра. В этом маленьком датчике, который размером чуть больше карты памяти есть термометр, но не вздумайте его подключать.
+                            Сам барометр мы потом поместим внутрь корпуса, так как давление везде одинаковое. Но если вы захотите сделать среднее арифметическок между DHT-11
+                            и BMP-180 то тогда у вас получаться неверные и очень большие показатели температуры. Почему я не решил вынести барометр наружу и считывать 
+                            температуру с него? Потому что он имеет большую погрешность и не измеряет влажность. А одним из важнейших показателей микроклимата является влажность.
+                            Перейдём к подключению. Подключение очень простое. Пин VCC нужно подключить к пину 5V на плате. Пин GND к пину GND. Пин SDA
+                            нужно подключить к пину A4. Пин SCl нужно подключить к пину A5. Не бойтесь что дисплей и барометр будут работать на одних портах. 
+                            Благодаря шине I2C на 2 портах может быть 127 датчиков. Для подключения барометра я использовал библиотеку iarduino_Pressure_BMP.h .Именно за счёт барометра
+                            и будет происходить предсказание осадков. Сам принцип я изложу ниже.
+                        </p>
+                            <div class="picture" style="margin-top: 4%;"> 
+                                <img src="pictures/подкbmp.png" alt="подключение bmp" width="40%" height="10%"><br>  
+                            </div>
+                            <p class="text-center"><b>Подключение BMP-180</b></p><br>
+                        <p> 
+                            Следующий датчик это DS1302 или датчик реального времению. Для его работы нужна батарейка, чтобы если отключилось питание, он мог продолжать считать время.
+                            Пин RST подключается к пину D5. Пин DAT подключается к пину D6. Пин CLK подключается к пину D7. VCC к 5V GND к GND. Данный датчик подключать строго по
+                            инструкции. Подключение этого датчика настраивается через библиотеку. Так что чтобы изменить подключение нужно знать C++. Но к счастью я его знаю. Поэтому
+                            я смог решить следующую проблему. Когда я подключил часы, то я понял, что на дисплее мало места и все значения не выводятся. Поэтому я переписал библиотеку
+                            на более сокращённые значения. Если вы хотите чтобы дни недели и месяцы были на русском, то напишите мне. В конце я прикреплю файл с уже переделанной 
+                            библиотекой под сокращённые значения. Сама библиотека которую я переписывал - это DS1302.h. Вотографию до полной сборки я сделать не успел. Поэтому 
+                            ориентируйтесь по цветам проводов.
+                        </p>
+
+                        <div class="decoration">
+                            <div class="picture"> 
+                                <img src="pictures/подкds2.jpg" alt="подключение ds" style="width: 80% ; height: 100%;"><br>  
+                            </div>
+                            <div class="picture"> 
+                                <img src="pictures/подкds1.jpg" alt="подключение ds" style="width: 80% ; height: 100%;"><br>     
+                            </div>   
+                        </div>
+                        <p class="text-center"><b>Подключение DS1302</b></p><br>
+
+                        <p>
+                            Потом я подключал датчик качества воздуха или MQ-2. Он подключается почти как DHT-11. Только у него есть особенность. Его можно подключать как к цифровому,
+                            так и к аналоговому порту. Лучше подключать к аналоговому. Так как будет меньше ШУМа  и значения будут более точными. Поэтому + к 5V,
+                            - к GND, A0 подключаем к любому аналаговому порту. Аналоговый порт обозначается как A с числом. Библиотека - MQ135.h.
+                        </p>
+                        <div class="decoration">
+                            <div class="picture"> 
+                                <img src="pictures/подкMQ2.jpg" alt="подключение mq" style="width: 80% ; height: 100%;"><br>  
+                            </div>
+                            <div class="picture"> 
+                                <img src="pictures/подкmq.jpg" alt="подключение mq" style="width: 80% ; height: 100%;"><br>     
+                            </div>   
+                        </div>
+                        <p class="text-center"><b>Подключение MQ-2</b></p><br>
+
+                        <p>
+                            Ну а DHT-22 подключается точно также как и DHT-11. + к 5V, - к GND, OUT(Иногда DATA) к любому свободному цифровому порту кроме, 0 и 1.
+                            Только прикреплять его нужно длинным проводом. Длинну можете подобрать сами. Мне кажется. чтто самая оптпимальная около 50 сантимеетров.
+                            Библиотека всё таже DHT.h. При полной сборке у меня возникла проблема, которая как оказалась возникает у всех. При отрицательных температурах
+                            Датчик выводит какое-то одно не понятное значение -3276˚C. Решение этой проблемы я долго искал и еле нашёл, но вам очень повезло, так как проблема крылась в 
+                            библиотеке, которую я переписал. Но всем остальным кто использует этот датчик, но не знает как решить эту проблему.Решение будет ниже. Самое главное позабодтесь
+                            о защите датчика от воды, так как он не герметичен.
+                        </p>
+                            <div class="picture"> 
+                                <img src="pictures/подкdht22.jpg" alt="подключение mq" style="width: 50% ; height: 100%;"><br>  
+                            </div>
+                            <p class="text-center"><b>Подключение MQ-2</b></p><br>
+
+                            <div class="decoration">
+                                <p>Замениете это</p>
+                                <div class="picture"> 
+                                    <img src="pictures/проблема.png"  style="width: 130% ; height: 100%;"><br>  
+                                </div>
+                            </div>
+                            <div class="decoration">    
+                                <p>На это</p>
+                                <div class="picture"> 
+                                    <img src="pictures/решение проблемы.png"  style="width: 120% ; height: 100%;"><br>     
+                                </div>   
+                            </div>
+                            <p class="text-center"><b>Решение проблемы</b></p><br>   
+                            
+                        <p>
+                            После этого если вы собирали всё на макетной плате, то распаяйте всё. Дальше придумайте какойнибудь корпус.
+                            У меня была хорошая возможноссть и я напечатал на 3D-принтере, но корпус можно слелать и из обычной фанеры.
+                            Если что вот файл <a href="Корпус метеостанция v6.stl">Корпуса</a> и файл <a href="корпус для DHT22 (версия 5)-Тело.stl">защиты</a> датчика от воды.
+                            И в итоге у меня получилась вот такая метеостанция:
+                        </p>    
+                        <div class="picture"> 
+                            <img src="pictures/7.jpg"  style="width: 70% ; height: 70%;"><br>     
+                        </div> 
+                    </div>                 
+
+                    <div class="neon"></div>
+
+                    <div id="item-1-6">
+                        <h5><b>Прошивка</h5>
+                        <p>
+                            <ol>
+                                <li>
+                                    Установка Arduino IDE. находится в интернете в свободном доступе. Я пользовался версей 1.8.19. 
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/ide.png"  style="width: 30% ; height: 30%;"><br>     
+                                </div> 
+                                <li>
+                                    Откройте программу и вверхней части нажмите на раздел <i>инструменты</i>.
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/инструменты.png"  style="width: 50% ; height: 50%;"><br>     
+                                </div> 
+                                <li>
+                                    В открывшемся окне, выбирите вашу плату и порт, к которой он подключён.
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/выбранный порт.png"  style="width: 50% ; height: 50%;"><br>     
+                                </div>
+                                <li>
+                                    Скачайте этот архив <a href="метеостанция.zip">Метеостанция</a>
+                                </li>
+                                <li>
+                                    Разархивируйте его и увидите ещё несколько архивов и папку под названием <i>meteostancia_6.4</i>. Кроме этой папки
+                                    ничего разархивировать не надо. Это библиотеки, они добавляются в архивах.
+                                </li> 
+                                <li>
+                                    Откройте программу и зайдите в раздел <i>скетч</i> в верхней части.
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/Скетч.png"  style="width: 50% ; height: 50%;"><br>     
+                                </div>
+                                <li>
+                                    Потом зайдите в раздел <i>Подключить библиотеку</i>.
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/библиотеки.png"  style="width: 40% ; height: 10%;"><br>     
+                                </div>
+                                <li>
+                                    Нажмите кнопку <i> Добавит .zip библиотеку</i>. После этого найдите место куда вы разархивировали архив и поочерёдно добавьте библиотеки.
+                                </li>
+                                <li>
+                                    Откройту файл <i>meteostancia_6.4</i> внутри папки с помощью Arduino IDE
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/открытие файла.png"  style="width: 50% ; height: 50%;"><br>     
+                                </div> 
+                                <li>
+                                    Потом перед вами будет код
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/код.png"  style="width: 80% ; height: 70%;"><br>     
+                                </div>
+                                <li>
+                                    Настройте пины DHT-11, DHT-22 и MQ-2.
+                                </li>
+                                <li>
+                                    В этой области происходит настройка времени.
+                                </li>
+                                <div class="picture"> 
+                                    <img src="pictures/время.png"  style="width: 70% ; height: 70%;"><br>     
+                                </div>
+                                <li>Для настройки времени удалите слеши слева и выставите нужное время с учётом 17 секунд на загрузку. 
+                                    И загрузите. Для этого нужно нажать на стрелку в верхнем левом углу
+                                </li>
+                                <li>
+                                    После того как плата прошилась верните слеши наместо, и снова загрузите код. Это нужно для того чтобы после оключения питания
+                                    время не приходилось каждый раз настраивать.
+                                </li>
+                                <li> Всё прошивка окончена.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <div class="neon"></div>
+                            Дальше поставьте метеостанцию в нужное для вас место. подключите блок питания к сети и следите за микроклиматом в своём доме.
+                        </p>
+                    </div>
+
+                    <div class="neon"></div>
+
+                    <div id="item-1-7">
+                        <h5><b>///</h5>
+                        <p></p>
+                    </div>
+
+                    <div class="neon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Создатели</h4>
+                    <ul >
+                    <li> Макаров Дмитрий Сергеевич</li>
+                    <li> Недвига Денис Юрьевич</li>
+                    <li> Попцов Артём Вячеславович</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Помощь</h4>
+                    <ul>
+                    <li><a>Если вы нашли ошибку</a></li>
+                    <li><a>Если вознили вопросы</a></li>
+                    <li><a>Если есть предложеняи</a></li>
+                    <li><a>Пишите мне</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Магазин</h4>
+                    <ul>
+                    <li><a>Вам лень замарачиваться</a></li>
+                    <li><a>Нухна метеостанция,</a></li>
+                    <li><a>Но нет желания её делать</a></li>
+                    <li><a>Пишите мне</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Найдите меня</h4> 
+                    <div class="social-links">                   
+                        <a >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                            </svg>
+                        </a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
