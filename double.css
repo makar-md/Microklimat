@@ -7,13 +7,11 @@
 
 /* настройка размеров карусели */
 .carousel-inner {
-    /* height: 700px; */
     width: 100%;
     height: 100%;
   }
 
   .carousel-item {
-    /* height: 700px; */
     width: 100%;
     height: 100%;
   }  
