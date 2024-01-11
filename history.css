@@ -28,7 +28,7 @@ ul{
         justify-content: center;
         align-items: center;
 
-        margin-top: 4%;
+        margin-top: 4.5%;
         padding: 5%;
     }
     .text{
@@ -40,7 +40,7 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 4%;
+        margin-top: 5%;
         width: 95%;
         padding: 3%;
     } 
