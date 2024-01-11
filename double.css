@@ -7,6 +7,14 @@
 
  /* настройка размеров карусели */
 @media (min-width: 300px) {
+    .carousel-inner {
+    width: 100%;
+    height: 30vh;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 30vh;
+  } 
   .container{ 
       margin-top: 10%;
       padding: 5%;
@@ -22,11 +30,11 @@
 @media (min-width: 576px) {
   .carousel-inner {
     width: 100%;
-    height: 25vh;
+    height: 45vh;
   }
   .carousel-item {
     width: 100%;
-    height: 25vh;
+    height: 45vh;
   }  
   .container{
     margin-top: 7%;
@@ -44,11 +52,11 @@
 @media (min-width: 768px) {
   .carousel-inner {
     width: 100%;
-    height: 50vh;
+    height: 65vh;
   }
   .carousel-item {
     width: 100%;
-    height: 50vh;
+    height: 65vh;
   } 
   .container{
     margin-top: 4%;
@@ -66,11 +74,11 @@
 @media (min-width: 992px) {
   .carousel-inner {
     width: 100%;
-    height: 70vh;
+    height: 85vh;
   }
   .carousel-item {
     width: 100%;
-    height: 70vh;
+    height: 85vh;
   }  
   .container{
     margin-top: 3%;
