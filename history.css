@@ -5,6 +5,7 @@
     margin-top: 0.2%;
 }
 body{
+    margin-top: 2%;
     white-space: normal;
     word-break: break-all;
     word-break: keep-all;
@@ -18,17 +19,23 @@ ul{
     color: rgb(144, 146, 148);
 }
 
-#gr{
-    background-image: linear-gradient(45deg, yellow, #e91e63);
+.navbar-toggler{
+    background-image: linear-gradient(to right, rgb(218, 160, 1), rgb(233, 30, 99));
 }
+
 
 .neon{
-     /* border-top: 2px solid #e91e63;  */
-     height: 3px;
-     background-image: radial-gradient(circle, rgb(230, 154, 13), #e91e63);
+    margin-top: 2%;
+    height: 3px;
+    background-image: radial-gradient(circle, rgb(230, 154, 13), #e91e63);
 }
 
-
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
 .decoration{
     display: flex;
     justify-content: space-around;
@@ -53,7 +60,6 @@ body{
 footer > .container > .row > .footer-col > ul{
     list-style: none;
     color: rgb(144, 146, 148);
-    /* color: #24262b; */
 }
 .footer{
     background-color: rgb(33, 37, 41);
