@@ -53,6 +53,13 @@
 }
 /* до сюда */
 
+  /* настройка размеров картинки */
+.carousel > .carousel-inner > .carousel-item > img{
+    width: 100%; 
+    height: 100%;
+}
+  /* до сюда*/
+
 .neon{
     /* border-top: 2px solid #e91e63;  */
     margin-top: 2%;
