@@ -22,13 +22,23 @@ ul{
     background-image: linear-gradient(to right, rgb(218, 160, 1), rgb(233, 30, 99));
 }
 
+@media (min-width: 300px) {
+    #text{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 10%;
+        padding: 5%;
+    }
+ }
 @media (min-width: 576px) {
     #text{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        padding-right: 5%;
+        margin-top: 7%;
+        padding: 5%;
     } 
     video{
         margin-top: 2%;
@@ -43,7 +53,8 @@ ul{
         justify-content: center;
         align-items: center;
         width: 88%;
-        padding-right: 5%;
+        margin-top: 4%;
+        padding: 1%;
     }  
     video{
         margin-top: 2%;
@@ -58,7 +69,8 @@ ul{
         justify-content: center;
         align-items: center;
         width: 84%;
-        padding-right: 10%;
+        margin-top: 3%;
+       padding: 1%;
     } 
     video{
         margin-top: 2%;
