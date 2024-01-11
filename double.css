@@ -6,7 +6,7 @@
 }
 
  /* настройка размеров карусели */
- @media (min-width: 300px) {
+@media (min-width: 300px) {
   #myCarousel{
     margin-top: 10%;
   }
@@ -117,19 +117,6 @@
   .carousel-item {
     width: 100%;
     height: 97vh;
-  }  
-  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
-    font-size: 30px;
-  }
-  
-  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
-    font-size: 50px;
-  }
-}
-
-  .carousel-item {
-    width: 100%;
-    height: 100vh;
   }  
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
     font-size: 30px;
