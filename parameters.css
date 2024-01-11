@@ -23,6 +23,29 @@ ul{
     background-image: linear-gradient(to right, rgb(218, 160, 1), rgb(233, 30, 99));
 }
 
+@media (min-width: 576px) {
+     #text{ 
+        margin-top: 5%;
+     }
+  }
+  
+  @media (min-width: 768px) {
+     #text{
+        margin-top: 4%;
+     }
+  }
+  
+  @media (min-width: 992px) {
+    #text{
+        margin-top: 3%;
+    }
+  }
+  
+    @media (min-width: 1200px) { 
+    #text{
+        margin-top: 2%;        
+    }
+  }
 
 .neon{
     margin-top: 2%;
