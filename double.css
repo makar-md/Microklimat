@@ -6,42 +6,48 @@
 }
 
  /* настройка размеров карусели */
-@media (min-width: 300px) {
-    .carousel-inner {
-    width: 100%;
-    height: 30vh;
+ @media (min-width: 300px) {
+  #myCarousel{
+    margin-top: 10%;
   }
-  .carousel-item {
-    width: 100%;
-    height: 30vh;
-  } 
   .container{ 
       margin-top: 10%;
       padding: 5%;
   }
-  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
-    font-size: 10px;
-  }
-  
-  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
-    font-size: 20px;
-  }
-} 
-@media (min-width: 576px) {
   .carousel-inner {
     width: 100%;
-    height: 45vh;
+    height: 35vh;
   }
   .carousel-item {
     width: 100%;
-    height: 45vh;
+    height: 35vh;
+  }
+  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
+    font-size: 15px;
+  }
+  
+  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
+    font-size: 25px;
+  }
+} 
+@media (min-width: 576px) {
+  #myCarousel{
+    margin-top: 7%;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 50vh;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 50vh;
   }  
   .container{
     margin-top: 7%;
     padding: 5%
   }
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
-    font-size: 10px;
+    font-size: 18px;
   }
   
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
@@ -50,6 +56,9 @@
 }
 
 @media (min-width: 768px) {
+  #myCarousel{
+    margin-top: 6%;
+  }
   .carousel-inner {
     width: 100%;
     height: 65vh;
@@ -63,7 +72,32 @@
     padding: 1%;
   } 
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
-    font-size: 20px;
+    font-size: 23px;
+  }
+  
+  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  #myCarousel{
+    margin-top: 3.5%;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 70vh;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 70vh;
+  }  
+  .container{
+    margin-top: 3%;
+    padding: 1%;
+  }
+  .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
+    font-size: 25px;
   }
   
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
@@ -71,19 +105,19 @@
   }
 }
 
-@media (min-width: 992px) {
+  @media (min-width: 1200px) {
+    #myCarousel{
+      margin-top: 2%;
+    }
   .carousel-inner {
     width: 100%;
-    height: 85vh;
+    height: 97vh;
   }
+
   .carousel-item {
     width: 100%;
-    height: 85vh;
+    height: 97vh;
   }  
-  .container{
-    margin-top: 3%;
-    padding: 1%;
-  }
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption{
     font-size: 30px;
   }
@@ -92,12 +126,6 @@
     font-size: 50px;
   }
 }
-
-  @media (min-width: 1200px) {
-  .carousel-inner {
-    width: 100%;
-    height: 100vh;
-  }
 
   .carousel-item {
     width: 100%;
