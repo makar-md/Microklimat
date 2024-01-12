@@ -168,7 +168,7 @@
     margin-bottom: 2%;
   }
   :root {
-    /* violet */
+
     --primary-color:233, 30, 99;
     
     /* white */
@@ -179,7 +179,7 @@
     transition: all 0.3s ease;
   }  
   .btn-glow:hover {
-    box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 30px 0px;   
+    box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 40px 0px;   
   }  
   .btn-gradient {
     background-image: linear-gradient(to right, rgb(218, 160, 1), rgb(233, 30, 99));
