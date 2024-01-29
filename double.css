@@ -138,7 +138,10 @@
   .col-12 > #myCarousel > .carousel-inner > .carousel-item > .container > .carousel-caption > h1{
     font-size: 50px;
   }
-  .col-12 > #myCarousel > .carousel-inner > #slide2 > .container > .carousel-caption > р1{
+  .col-12 > #myCarousel > .carousel-inner > #slide2 > .container > .carousel-caption > p{
+    color: rgb(31, 31, 31);
+  } 
+  .col-12 > #myCarousel > .carousel-inner > #slide2 > .container > .carousel-caption > h1{
     color: rgb(31, 31, 31);
   } 
 }
