@@ -31,7 +31,7 @@
     font-size: 25px;
   }
   .col-12 > #myCarousel > .carousel-inner > #slide2 > .container > .carousel-caption > p{
-    color: rgb(31, 31, 31);
+    color: white;
   } 
   .col-12 > #myCarousel > .carousel-inner > #slide3 > .container > .carousel-caption > p{
     color: rgb(50, 51, 51);
